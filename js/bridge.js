@@ -721,7 +721,7 @@
                 if (add_response.status == 'success') {
                     var target = user.tasks;
                     $('#darken').toggle();
-                    target.push([add_response.id, '', info.description, info.priority, info.objective, info.project, null, null, target.lenght]);
+                    target.push([add_response.id, '', info.description, info.priority, info.objective, info.project, null, null, target.length]);
                     draw.tasks()();
                 } else {
                     message(add_response.status);
